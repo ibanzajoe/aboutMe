@@ -1,8 +1,23 @@
 <template>
   <div>
+    <top-nav />
     <nuxt />
+    <nav-footer class="relative bg-white px-4 sm:px-8 lg:px-16 xl:px-40 2xl:px-64 pt-12 pb-10 text-center sm:text-left" />
   </div>
 </template>
+
+<script>
+  import topNav from '~/components/nav/top-nav.vue'
+  import navFooter from '~/components/nav/nav-footer.vue'
+
+  export default {
+    components: {
+      topNav, navFooter
+    }
+  }
+
+</script>
+
 
 <style>
 html {
