@@ -38,10 +38,10 @@
      <div class="hidden sm:flex">
        <ul class="flex flex-col sm:flex-row">
          <li>
-           <a href="/" class="sm:px-4 py-2 block">About</a>
+           <a href="/about" class="sm:px-4 py-2 block">About</a>
          </li>
          <li>
-           <a href="/" class="sm:px-4 py-2 block">Get Quote!</a>
+           <a href="/contact" class="sm:px-4 py-2 block">Get Quote!</a>
          </li>
          <li>
            <a href="/" class="sm:px-4 py-2 block">Tech Support</a>
