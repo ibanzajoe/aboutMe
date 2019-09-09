@@ -41,10 +41,7 @@
            <a href="/about" class="sm:px-4 py-2 block">About</a>
          </li>
          <li>
-           <a href="/contact" class="sm:px-4 py-2 block">Get Quote!</a>
-         </li>
-         <li>
-           <a href="/" class="sm:px-4 py-2 block">Tech Support</a>
+           <a href="/contact" class="sm:px-4 py-2 block">Tech Support</a>
          </li>
          <li>
            <a href="/" class="sm:px-4 py-2 block">Review</a>

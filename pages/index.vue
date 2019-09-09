@@ -389,14 +389,18 @@
       <div class="flex flex-col md:flex-row mt-12 items-center justify-between">
         <div class="w-full md:w-1/2">
           <div class="mx-auto">
-            <form class="w-full max-w-lg cashmac-quote-form">
+            <img class="mx-auto" src="/home/make-it-rain.png" alt="dollars" />
+
+            <!--<contact-form />-->
+
+            <!--<form class="w-full max-w-lg cashmac-quote-form">
               <div class="flex flex-wrap -mx-3 mb-6">
                 <div class="w-full md:w-1/2 px-3 mb-6 md:mb-0">
                   <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="grid-first-name">
                     First Name
                   </label>
                   <input class="appearance-none block w-full bg-gray-200 text-gray-700 border border-red-500 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white" id="grid-first-name" type="text" placeholder="Jane">
-                  <!--<p class="text-red-500 text-xs italic">Please fill out this field.</p>-->
+                  &lt;!&ndash;<p class="text-red-500 text-xs italic">Please fill out this field.</p>&ndash;&gt;
                 </div>
                 <div class="w-full md:w-1/2 px-3">
                   <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="grid-last-name">
@@ -411,15 +415,15 @@
                     Email
                   </label>
                   <input class="appearance-none block w-full bg-gray-200 text-gray-700 border border-red-500 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white" id="grid-email" type="email" placeholder="name@address.com">
-                  <!--<p class="text-gray-600 text-xs italic">Make it as long and as crazy as you'd like</p>-->
+                  &lt;!&ndash;<p class="text-gray-600 text-xs italic">Make it as long and as crazy as you'd like</p>&ndash;&gt;
                 </div>
-                <!--<div class="w-full px-3">
+                &lt;!&ndash;<div class="w-full px-3">
                   <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="grid-password">
                     Password
                   </label>
                   <input class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" id="grid-password" type="password" placeholder="******************">
                   <p class="text-gray-600 text-xs italic">Make it as long and as crazy as you'd like</p>
-                </div>-->
+                </div>&ndash;&gt;
               </div>
               <div class="flex flex-wrap -mx-3 mb-2">
                 <div class="w-full px-3">
@@ -427,9 +431,9 @@
                     Phone
                   </label>
                   <input class="appearance-none block w-full bg-gray-200 text-gray-700 border border-red-500 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white" id="grid-phone" type="phone" placeholder="(333) 333-3333">
-                  <!--<p class="text-gray-600 text-xs italic">Make it as long and as crazy as you'd like</p>-->
+                  &lt;!&ndash;<p class="text-gray-600 text-xs italic">Make it as long and as crazy as you'd like</p>&ndash;&gt;
                 </div>
-                <!--<div class="w-full md:w-1/3 px-3 mb-6 md:mb-0">
+                &lt;!&ndash;<div class="w-full md:w-1/3 px-3 mb-6 md:mb-0">
                   <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="grid-city">
                     City
                   </label>
@@ -455,9 +459,9 @@
                     Zip
                   </label>
                   <input class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" id="grid-zip" type="text" placeholder="90210">
-                </div>-->
+                </div>&ndash;&gt;
               </div>
-            </form>
+            </form>-->
           </div>
         </div>
 
@@ -505,11 +509,13 @@
 </template>
 
 <script>
+import contactForm from '~/components/form/contact-form.vue'
+
 import Logo from '~/components/Logo.vue'
 
 export default {
   components: {
-    Logo
+    Logo, contactForm
   }
 }
 </script>
@@ -558,7 +564,7 @@ export default {
 
 .hero-section {
   padding-top: 6rem;
-  height: calc(80vh - 100px);
+  height: calc(70vh - 100px);
 }
 
 .hero-text-box {
