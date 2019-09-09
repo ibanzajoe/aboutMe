@@ -32,7 +32,7 @@
       <div class="mt-12 sm:w-1/2 lg:w-2/5 lg:mt-0 lg:pl-12">
         <div>
           <a href="/" >
-            <img src="https://cashmacs.com/wp-content/uploads/2015/03/Cash-for-macs.png" width="150" />
+            <img src="https://cashmacs.com/wp-content/uploads/2015/03/Cash-for-macs.png" width="150" class="footer-logo"/>
           </a>
           <!--<svg xmlns="http://www.w3.org/2000/svg" width="188" height="39" class="mx-auto sm:mx-0"><text transform="translate(87 29)" fill="#454f5b">
             <tspan x="0" y="0">FairRate</tspan>
@@ -60,5 +60,11 @@
 </script>
 
 <style scoped>
+
+  @media screen and (max-width: 640px) {
+    .footer-logo {
+      margin: 0 auto;
+    }
+  }
 
 </style>

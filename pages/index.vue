@@ -1,15 +1,15 @@
 <template>
   <div>
-    <section class="relative px-4 sm:px-8 lg:px-16 xl:px-40 2xl:px-64 pt-32 pb-48 sm:pb-64 md:pt-40 md:pb-48 lg:pt-40 xl:pb-64 2xl:pt-56 2xl:pb-96 text-center sm:text-left">
+    <section class="frontground-image hero-section">
       <div>
-        <div class="relative w-full sm:w-2/3 lg:w-1/2 z-10 hero-text-box">
+        <div class="relative w-full lg:w-full z-10  hero-text-box">
           <h1 class="text-3xl lg:text-4xl xl:text-5xl leading-tight font-bold">Instant Cash for Your Used Apple Products!</h1>
           <p class="text-base leading-snug text-gray-700 mt-4">Sign up to get a free quote!</p>
-          <a href="#" class="w-full block sm:inline-block sm:w-auto px-6 py-4 bg-blue-600 text-white rounded-lg mt-8">Get Paid!</a>
+          <a href="#" class="inline-block sm:inline-block sm:w-auto px-6 py-4 bg-blue-600 text-white rounded-lg mt-8">Get Paid!</a>
         </div>
 
-        <div class="w-full absolute bottom-0 right-0">
-          <img src="https://cashmacs.com/wp-content/uploads/2015/05/cash-for-macs.jpg" width="100%" alt="">
+        <div class="w-full h-full absolute top-0">
+          <!--<img src="/home/apple.png" width="100%" alt="" style="max-width: 60%;">-->
 
           <!--<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1161.727 456.805">
             <defs>
@@ -388,8 +388,8 @@
 
       <div class="flex flex-col md:flex-row mt-12 items-center justify-between">
         <div class="w-full md:w-1/2">
-          <div class="cashmac-quote-form mx-auto">
-            <form class="w-full max-w-lg">
+          <div class="mx-auto">
+            <form class="w-full max-w-lg cashmac-quote-form">
               <div class="flex flex-wrap -mx-3 mb-6">
                 <div class="w-full md:w-1/2 px-3 mb-6 md:mb-0">
                   <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="grid-first-name">
@@ -556,17 +556,76 @@ export default {
   padding-top: 15px;
 }
 
+.hero-section {
+  padding-top: 6rem;
+  height: calc(80vh - 100px);
+}
+
 .hero-text-box {
   padding: 2rem;
   margin-left: auto;
   margin-right: 0;
   border-radius: 5px;
-  background-color: rgba(255, 255, 255, 0.25);
+  background-color: rgba(255, 255, 255, 0.45);
+  text-align: center;
+}
+
+.hero-text-box h1 {
+  text-align: center;
 }
 
   .cashmac-quote-form {
     background-color: rgba(255, 255, 255, 0.25);
     padding: 1.5rem;
     border-radius: 5px;
+    margin: 0 auto;
   }
+
+  .frontground-image {
+    background-image: url('/home/appleproductline-frontdrop-800x313.jpg');
+    background-position: bottom center;
+    background-repeat: no-repeat;
+    background-size: 950px;
+  }
+
+@media screen and (max-width: 600px) {
+  .hero-section {
+    padding-top: 3rem;
+    height: 500px;
+  }
+
+  .frontground-image {
+    background-size: 95% !important;
+  }
+}
+
+@media screen and (max-height: 769px) @media screen and (max-width: 444px) {
+
+  .hero-section {
+    height: 500px;
+  }
+
+  .hero-section {
+    padding-top: 3rem;
+    height: 600px;
+  }
+
+  .frontground-image {
+    background-size: 95% !important;
+  }
+}
+
+@media screen and (max-height: 950px) {
+  @media screen and (max-width: 1080px) {
+    .hero-section {
+      padding-top: 3rem;
+      height: 700px;
+    }
+  }
+
+
+  .frontground-image {
+    background-size: 70%;
+  }
+}
 </style>
