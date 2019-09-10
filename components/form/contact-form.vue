@@ -49,7 +49,7 @@
             <!--<p class="text-gray-600 text-xs italic">Make it as long and as crazy as you'd like</p>-->
           </div>
 
-          <!--<div class="w-full px-3">
+          <div class="w-full px-3">
             <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="grid-message">
               Message
             </label>
@@ -58,7 +58,7 @@
 
           <div class="w-full px-3">
             <div @click="createContact" class="w-full block sm:inline-block sm:px-6 py-4 bg-blue-600 text-white rounded-lg">Submit</div>
-          </div>-->
+          </div>
 
           <!--<div class="w-full md:w-1/3 px-3 mb-6 md:mb-0">
             <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="grid-city">

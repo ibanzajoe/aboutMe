@@ -5,7 +5,7 @@
         <div class="relative w-full lg:w-full z-10  hero-text-box">
           <h1 class="text-3xl lg:text-4xl xl:text-5xl leading-tight font-bold">Instant Cash for Your Used Apple Products!</h1>
           <p class="text-base leading-snug text-gray-700 mt-4">Sign up to get a free quote!</p>
-          <a href="#" class="inline-block sm:inline-block sm:w-auto px-6 py-4 bg-blue-600 text-white rounded-lg mt-8">Get Paid!</a>
+          <a href="/contact" class="inline-block sm:inline-block sm:w-auto px-6 py-4 bg-blue-600 text-white rounded-lg mt-8">Get Paid!</a>
         </div>
 
         <div class="w-full h-full absolute top-0">
@@ -486,7 +486,7 @@
             </li>
           </ul>
 
-          <a href="#" class="inline-block px-6 py-4 bg-white text-blue-600 rounded-lg mt-8">Get a Quote!</a>
+          <a href="/contact" class="inline-block px-6 py-4 bg-white text-blue-600 rounded-lg mt-8">Get a Quote!</a>
         </div>
       </div>
     </section>
@@ -500,7 +500,7 @@
         </div>
 
         <div class="w-full md:w-1/3 md:text-right mt-6 md:mt-0">
-          <a href="#" class="inline-block px-6 py-4 bg-blue-600 text-white rounded-lg">Tech Support</a>
+          <a href="/contact" class="inline-block px-6 py-4 bg-blue-600 text-white rounded-lg">Tech Support</a>
         </div>
       </div>
     </section>
@@ -565,6 +565,10 @@ export default {
 .hero-section {
   padding-top: 6rem;
   height: calc(70vh - 100px);
+  @media screen and (max-width: 950px) {
+    padding-top: 12rem;
+    height: calc(85vh - 100px);
+  }
 }
 
 .hero-text-box {
@@ -596,8 +600,8 @@ export default {
 
 @media screen and (max-width: 600px) {
   .hero-section {
-    padding-top: 3rem;
-    height: 500px;
+    padding-top: 7rem;
+    height: 600px;
   }
 
   .frontground-image {
@@ -606,10 +610,6 @@ export default {
 }
 
 @media screen and (max-height: 769px) @media screen and (max-width: 444px) {
-
-  .hero-section {
-    height: 500px;
-  }
 
   .hero-section {
     padding-top: 3rem;

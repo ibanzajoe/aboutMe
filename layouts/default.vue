@@ -19,6 +19,7 @@
   import topNav from '~/components/nav/top-nav.vue'
   import navFooter from '~/components/nav/nav-footer.vue'
 
+
   export default {
     components: {
       topNav, navFooter
