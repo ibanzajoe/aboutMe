@@ -1,7 +1,9 @@
 <template>
   <div>
     <top-nav />
-    <div class="w-full bg-transparent px-4 sm:px-8 lg:px-16 xl:px-40 2xl:px-64 py-6 bg-white xl:py-4" >
+    <div class="w-full bg-transparent px-4 sm:px-8 lg:px-16 xl:px-40 2xl:px-64 py-6 bg-white xl:py-4"
+         style="height: 112px;"
+    >
       <div class="flex">
         <div class="v-offset-logo-placeholder" data-v-68cf3254=""><a href="/" data-v-68cf3254=""><img src="https://cashmacs.com/wp-content/uploads/2015/03/Cash-for-macs.png" width="150" data-v-68cf3254=""></a></div>
         <a href="/" class="sm:px-4 py-2 block bg-blue-600 text-white rounded-lg ml-4 nav-offset-placeholder hidden sm:flex" data-v-68cf3254="">
