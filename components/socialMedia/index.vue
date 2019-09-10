@@ -1,21 +1,18 @@
 <template>
   <div class="social-media">
     <div class="social-media-container">
-      <div class="social-media-item">
+      <a href="https://www.facebook.com/cashmacsLA" class="social-media-item">
         <img src="./images/facebook.svg" alt="fb" />
-      </div>
-      <div class="social-media-item">
-        <img src="./images/google-plus.svg" alt="g+" />
-      </div>
+      </a>
       <div class="social-media-item">
         <img src="./images/pinterest.svg" alt="pint" />
       </div>
       <div class="social-media-item">
         <img src="./images/twitter.svg" alt="twit" />
       </div>
-      <div class="social-media-item">
+      <a href="https://www.yelp.com/biz/cashmacs-burbank" class="social-media-item">
         <img src="./images/yelp.svg" alt="yelp" />
-      </div>
+      </a>
     </div>
   </div>
 </template>

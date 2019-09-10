@@ -53,11 +53,11 @@
                 Login
               </a>
             </li>-->
-            <li>
+            <!--<li>
               <a href="/" class="sm:px-4 py-2 block bg-blue-600 text-white rounded-lg ml-4">
                 Get Started
               </a>
-            </li>
+            </li>-->
           </ul>
         </div>
       </nav>

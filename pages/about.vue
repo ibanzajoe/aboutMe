@@ -1,16 +1,18 @@
 <template>
   <div class="about">
-    <section class="relative px-4 sm:px-8 lg:px-16 xl:px-40 2xl:px-64 pt-32 pb-48 sm:pb-64 md:pt-40 md:pb-48 lg:pt-40 xl:pb-64 2xl:pt-56 2xl:pb-96 text-center sm:text-left">
-      <div>
+    <section class="about-hero-section relative px-4 sm:px-8 lg:px-16 xl:px-40 2xl:px-64 pt-32 pb-32 sm:pb-64 md:pt-40 md:pb-40 lg:pt-40 xl:pb-40 2xl:pt-56 2xl:pb-56 text-center sm:text-left">
+      <div style="display: flex; align-items: center;">
+
+
         <div class="relative w-full sm:w-2/3 lg:w-1/2 z-10 hero-text-box">
-          <h1 class="text-3xl lg:text-4xl xl:text-5xl leading-tight font-bold">Instant Cash for Your Used Apple Products!</h1>
-          <p class="text-base leading-snug text-gray-700 mt-4">Sign up to get a free quote!</p>
-          <a href="#" class="w-full block sm:inline-block sm:w-auto px-6 py-4 bg-blue-600 text-white rounded-lg mt-8">Get Paid!</a>
+          <h1 class="text-3xl lg:text-4xl xl:text-5xl leading-tight font-bold">About Cash Macs</h1>
+          <p class="text-base leading-snug text-gray-700 mt-4"></p>
+          <!--<a href="#" class="w-full block sm:inline-block sm:w-auto px-6 py-4 bg-blue-600 text-white rounded-lg mt-8">Get Paid!</a>-->
         </div>
 
         <div class="w-full absolute bottom-0 right-0">
 
-          <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1161.727 456.805">
+          <!--<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1161.727 456.805">
             <defs>
               <clipPath id="a">
                 <path d="M847.9,82.732c-35.467,16.382-70.248,7.339-114.45-22.181-130.3-87.026-222.523-75.217-343.934,3.359-25.868,16.742-67.626,44.576-137.624,24.769C149.45,59.69,44.091,89,0,169.643H1161.727c-33.066-63-156.751-159.454-313.828-86.911" transform="translate(0.044 0.729)" fill="none"></path>
@@ -331,7 +333,38 @@
                 </text></g>
               </g>
             </g>
-          </svg>
+          </svg>-->
+        </div>
+      </div>
+    </section>
+    <section class="about-content-section relative text-center sm:text-left">
+      <div class="about-text-box">
+        <div class="about-text-title">
+
+        </div>
+        <div class="about-text-content">
+          CashMacs was created and launched from Gabriel’s basement in 2010 when a slowing job market motivated his entrepreneurial spirit. Gabriel noticed the demand for a service that would let individuals upgrade their used electronics at a lower cost to newer technology in a hassle-free process. CashMacs has been growing into a 5,000 sq. ft. site in the Burbank area since its creation.
+
+          At a time where new and better products are introduced on a daily basis and most people are upgrading their cellphones and computer every two years, a solution was found. Contact CashMacs and get the best value for your Apple products.
+        </div>
+      </div>
+    </section>
+
+    <section class="about-content-section relative bg-blue-600 text-center sm:text-left">
+      <div class="value-title">
+        Our Core Values
+      </div>
+      <div class="core-values">
+        <div class="core-values-item" v-for="(value, index) in values" :key="index">
+          <div class="absolute-box bg-white shadow-lg rounded-lg px-4 py-6 lg:p-8 md:mx-2 lg:mx-4"
+          >
+            <div class="absolute-label bg-white shadow-lg rounded-lg">
+              {{value.label}}
+            </div>
+            <div class="absolute-content">
+              {{value.content}}
+            </div>
+          </div>
         </div>
       </div>
     </section>
@@ -340,10 +373,128 @@
 
 <script>
   export default {
-    name: "about"
+    name: "about",
+    data () {
+      return {
+        values: [
+          {
+            label: "Integrity",
+            content: 'BEing trustworthy and honourable.  Integrity, honesty, and accountability are at the core of our business.'
+          },
+          {
+            label: 'Teamwork',
+            content: 'The best solutions come from working together with both colleagues and clients.  Effective teamwork demands strong Relationships, Respect, and Sharing.'
+          },
+          {
+            label: 'Excellence',
+            content: 'Means that we deliver what we promise and add value that goes beyond what is expected.  We achieve Excellence by making our customers happy.'
+          }
+        ]
+      }
+    }
   }
 </script>
 
 <style scoped>
+  .about-hero-section {
+    background: url('./apple-blue.jpg');
+    background-position: center;
+    height: 60vh;
+  }
 
+  .hero-text-box {
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .about-content-section {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+  }
+  .about-text-box {
+    max-width: 1024px;
+    margin: 0 auto;
+  }
+
+  .about-text-title {
+    font-size: 24px;
+    text-align: center;
+
+  }
+
+  .about-text-content {
+    font-size: 24px;
+    padding: 0 2rem;
+  }
+
+  .about-content-section {
+    height: 100%;
+  }
+  .value-title {
+    font-size: 36px;
+    text-align: center;
+    font-weight: 600;
+  }
+
+  .core-values {
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    max-width: 1024px;
+    margin: 0 auto;
+    margin-top: 4rem;
+    flex-wrap: wrap;
+  }
+
+  .core-values-item {
+    flex: 0 0 30%;
+  }
+
+  .core-values-item + .core-values-item {
+    margin-left: 1rem;
+  }
+
+  .absolute-box {
+    border-radius: 5px;
+    position: relative;
+    padding: 0 1rem;
+    min-height: 185px;
+    display: flex;
+    align-items: center;
+  }
+
+  .absolute-label {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 0.25rem 1rem;
+    border-radius: 5px;
+    font-size: 18px;
+    font-weight: 600;
+  }
+  .absolute-content {
+    text-align: center;
+  }
+
+  @media screen and (max-width: 1024px) {
+    .core-values {
+      max-width: 400px;
+      padding: 0 1rem;
+    }
+
+    .core-values-item {
+      flex: 1 1 100%;
+    }
+    .core-values-item + .core-values-item {
+      margin-left: 0;
+      margin-top: 2rem;
+    }
+
+    .about-text-content {
+      font-size: 20px;
+      padding: 0 1rem;
+      text-align: left;
+    }
+  }
 </style>

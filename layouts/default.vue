@@ -1,8 +1,7 @@
 <template>
   <div>
     <top-nav />
-    <div class="w-full bg-transparent px-4 sm:px-8 lg:px-16 xl:px-40 2xl:px-64 py-6 bg-white xl:py-4"
-         style="height: 112px;"
+    <div class="w-full bg-transparent px-4 sm:px-8 lg:px-16 xl:px-40 2xl:px-64 py-12 bg-white xl:py-8 nav-offset-placeholder-container"
     >
       <div class="flex">
         <div class="v-offset-logo-placeholder" data-v-68cf3254=""><a href="/" data-v-68cf3254=""><img src="https://cashmacs.com/wp-content/uploads/2015/03/Cash-for-macs.png" width="150" data-v-68cf3254=""></a></div>
@@ -92,5 +91,11 @@ html {
     color: transparent;
     background-color: transparent;
     border: 0;
+  }
+
+  .nav-offset-placeholder-container {
+    @media screen and (max-width: 950px) {
+      height: 209px;
+    }
   }
 </style>

@@ -564,7 +564,8 @@ export default {
 
 .hero-section {
   padding-top: 6rem;
-  height: calc(70vh - 100px);
+  height: calc(85vh - 100px);
+  max-height: 800px;
   @media screen and (max-width: 950px) {
     padding-top: 12rem;
     height: calc(85vh - 100px);
